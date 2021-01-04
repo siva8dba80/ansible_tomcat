@@ -1,0 +1,10 @@
+- hosts: node
+  tasks:
+  - name: Create file with content example
+    copy:
+      dest: "/home/ec2-user/madhu/access.log"
+      content: |
+        Madhu Sudhan Reddy
+        Banglore
+        DevOps Architech
+

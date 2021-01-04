@@ -1,0 +1,8 @@
+---
+  - hosts: node
+    gather_facts: false
+    become: true
+    become_method: sudo
+    
+    roles:
+      - tomcat_deploy

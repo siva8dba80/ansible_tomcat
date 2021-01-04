@@ -1,0 +1,9 @@
+---
+- name: deploy we abpplication trough nginx
+  hosts: node
+  gather_facts: false
+  become: true
+  roles:
+   - nginx_deploy
+   
+
